@@ -13,16 +13,6 @@ load_dotenv()
 # data = TextLoader(str(notes_path))
 # docs = data.load()
 
-pdf_path = Path(__file__).resolve().parent / "uploads" / "Ace.pdf"
-loader = PyPDFLoader(str(pdf_path))
-docs = loader.load()
-
-splitter = RecursiveCharacterTextSplitter(
-    chunk_size = 1000,
-    chunk_overlap = 200
-)
-chunks = splitter.split_documents(docs)
-
 
 template = ChatPromptTemplate.from_messages([
     ("system", "you are a Ai that summarizes the text and gives the important points in the form of bullet points."),
@@ -30,10 +20,6 @@ template = ChatPromptTemplate.from_messages([
 ])
 
 model = ChatMistralAI(model = "mistral-small-2506")
-prompt = template.format_messages(data = chunks[3].page_content)
-
-result = model.invoke(prompt)
-print(result.content)
 
 # model = ChatOpenRouter(model = "openai/gpt-4o-mini")
 # result = model.invoke("how are you?")

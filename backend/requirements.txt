@@ -29,6 +29,7 @@ langchain-core
 langchain-openai
 langchain-google-genai
 langchain-text-splitters
+arxiv<2
 
 # =========================
 # Embedding Models
