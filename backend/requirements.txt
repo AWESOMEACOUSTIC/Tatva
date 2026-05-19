@@ -1,0 +1,82 @@
+# =========================
+# Backend Framework
+# =========================
+fastapi
+uvicorn
+python-multipart
+pydantic
+python-dotenv
+aiofiles
+httpx
+
+# =========================
+# Database
+# =========================
+pymongo
+motor
+
+# =========================
+# Vector Database
+# =========================
+chromadb
+
+# =========================
+# RAG + LLM Orchestration
+# =========================
+langchain
+langchain-community
+langchain-core
+langchain-openai
+langchain-google-genai
+langchain-text-splitters
+
+# =========================
+# Embedding Models
+# =========================
+sentence-transformers
+tiktoken
+
+# =========================
+# PDF / Document Processing
+# =========================
+pypdf
+pdfplumber
+python-docx
+unstructured
+
+# =========================
+# AI Providers
+# =========================
+openai
+google-generativeai
+mistralai
+groq
+
+# =========================
+# Data Processing
+# =========================
+numpy
+pandas
+
+# =========================
+# Authentication & Security
+# =========================
+bcrypt
+passlib
+python-jose
+
+# =========================
+# Template Engine
+# =========================
+jinja2
+
+# =========================
+# Testing
+# =========================
+pytest
+
+# =========================
+# Optional Utilities
+# =========================
+tqdm
+requests

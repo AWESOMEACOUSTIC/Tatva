@@ -1,0 +1,21 @@
+.venv
+.env
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+node_modules
+dist/
+
+# Virtual Environment
+.venv/
+
+# Python Cache
+*.pyc
+
+# Vector DB
+chroma/
+
+# OS Files
+.DS_Store
+Thumbs.db
