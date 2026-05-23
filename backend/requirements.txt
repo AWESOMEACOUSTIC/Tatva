@@ -35,6 +35,7 @@ arxiv<2
 # Embedding Models
 # =========================
 sentence-transformers
+transformers<5
 tiktoken
 
 # =========================
